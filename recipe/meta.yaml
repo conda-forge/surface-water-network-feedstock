@@ -1,5 +1,5 @@
 {% set name = "surface-water-network" %}
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/surface_water_network-{{ version }}.tar.gz
-  sha256: da2d32efb578d58b11962cf6816ea6e15c756b0d2ddb5076ddd591e30bf6e720
+  sha256: c135b27dd86c866c09eba533fdcf1e408cb727d7fef2d732733074eb639e6f2c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
