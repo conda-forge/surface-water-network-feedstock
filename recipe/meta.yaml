@@ -22,11 +22,11 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - geopandas >=0.9
+    - geopandas
     - matplotlib-base
     - packaging
-    - pandas >=1.2
-    - pyproj >=2.2
+    - pandas
+    - pyproj
     - rtree
     - shapely
 
