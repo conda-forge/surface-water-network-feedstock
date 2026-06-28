@@ -23,7 +23,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - geopandas
-    - matplotlib-base
     - packaging
     - pandas
     - pyproj
