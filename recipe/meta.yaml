@@ -1,13 +1,13 @@
 {% set name = "surface-water-network" %}
-{% set version = "0.9" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/surface_water_network-{{ version }}.tar.gz
-  sha256: c135b27dd86c866c09eba533fdcf1e408cb727d7fef2d732733074eb639e6f2c
+  sha256: de6f0811e71e08b58a5acebc845718a85a6e6005b05844924ac796336573ebbd
 
 build:
   noarch: python
@@ -22,11 +22,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - geopandas >=0.9
-    - matplotlib-base
+    - geopandas
     - packaging
-    - pandas >=1.2
-    - pyproj >=2.2
+    - pandas
+    - pyproj
     - rtree
     - shapely
 
